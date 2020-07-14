@@ -7,7 +7,7 @@
     "outDir": "./dist",                        
     "rootDir": "./src",                       
     "removeComments": true,                
-    "strict": true,                           
+    // "strict": true,                           
     "typeRoots": [
       "./node_modules/@types"
     ],                                        
@@ -16,6 +16,12 @@
     "emitDecoratorMetadata": true, 
     "resolveJsonModule": true,        
     "skipLibCheck": true,                     
-    "forceConsistentCasingInFileNames": true  
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@controllers/*": ["./src/controllers/*"],
+      "@models/*": ["./src/models/*"],
+      "@views/*": ["./src/views/*"],
+    }
   }
 }
