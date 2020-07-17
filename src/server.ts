@@ -1,9 +1,11 @@
 import express from 'express';
+import "reflect-metadata";
+import { createConnection } from "typeorm";
+import userRoutes from '@routes/users/user.route'
 
 const app = express();
+createConnection();
 
-app.get('/', (req, res) => {
-    return res.json({ message: 'Hello World' })
-})
+app.use(userRoutes);
 
 app.listen(8080)
