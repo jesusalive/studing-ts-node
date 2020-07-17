@@ -1,5 +1,5 @@
-import {Request, Response} from 'express'
-import { getRepository, Repository } from 'typeorm'
+import { Request, Response } from 'express';
+import { getRepository, Repository } from 'typeorm';
 import { User } from "@models/User";
 class UserController {
     

@@ -1,11 +1,3 @@
-import express from 'express';
-import "reflect-metadata";
-import routes from '@routes/index'
-import { createConnection } from "typeorm";
+import app from './index';
 
-const app = express();
-createConnection();
-
-app.use(routes)
-
-app.listen(8080)
+app.listen(8080);
